@@ -2,7 +2,7 @@
 # Yksi naula on 32 luotia.
 # Yksi luoti on 13,3 grammaa.
 
-#Kysytään leviskain
+# Kysytään leviskain
 leviskat = int(input("Anna leiviskät.\n"))
 print()
 naulat = int(input("Anna naulat.\n"))
@@ -10,14 +10,14 @@ print()
 luodit = float(input("Anna luodit.\n"))
 print()
 
-#painet
+# painet
 luodit_paine = 13.3
 naula_paine = 32 * luodit_paine
 leiviska_paine = 20 * naula_paine
 
-#lasketetaan koko paine
+# lasketetaan koko paine
 result = (leviskat * leiviska_paine) + (naulat * naula_paine) + (luodit * luodit_paine)
 
-#tulostetaan paine
+# tulostetaan paine
 print("Massa nykymittojen mukaan:")
 print(f"{result // 1000} kilogrammaa ja {(result % 1000):.2f} grammaa.")
