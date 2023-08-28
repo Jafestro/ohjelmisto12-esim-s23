@@ -20,4 +20,4 @@ result = (leviskat * leiviska_paine) + (naulat * naula_paine) + (luodit * luodit
 
 # tulostetaan paine
 print("Massa nykymittojen mukaan:")
-print(f"{result // 1000} kilogrammaa ja {(result % 1000):.2f} grammaa.")
+print(f"{(result // 1000):.0f} kilogrammaa ja {(result % 1000):.2f} grammaa.")
