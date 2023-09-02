@@ -1,12 +1,6 @@
-"""N
-if x ** 2 + y ** 2 < 1:
-    n ++
-kun while loopu
-
-piin_arvo = (4 * n) / N """
 import random
 
-N = int(input("Anna N määrä"))
+N = int(input("Anna N määrä\n"))
 i = 0
 n = 0
 while i < N:
@@ -17,4 +11,4 @@ while i < N:
     if x ** 2 + y ** 2 < 1:
         n += 1
 
-print(f"Piin arvo {N} arviolla on ")
+print(f"Piin arvo {N} arviolla on {(4 * n) / N}")
