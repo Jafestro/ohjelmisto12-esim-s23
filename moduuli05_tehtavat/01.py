@@ -1,5 +1,11 @@
 import random
 
+"""
+Kirjoita ohjelma, joka kysyy käyttäjältä arpakuutioiden lukumäärän. 
+Ohjelma heittää kerran kaikkia arpakuutioita ja tulostaa silmälukujen summan. 
+Käytä for-toistorakennetta.
+"""
+
 lukumaara = int(input("Anna arpakuutioiden lukumäärän: "))
 summa = 0
 for luku in range(1, lukumaara + 1):

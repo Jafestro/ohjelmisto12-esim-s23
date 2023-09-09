@@ -5,7 +5,7 @@ if luku <= 1:
 else:
     alku = True
     for i in range(2, int(luku ** 0.5) + 1):
-        if luku % i == 0 and luku != i or luku == 2:
+        if luku % i == 0 and luku != i:
             print(f"{luku} ei oo alkuluku")
             alku = False
             break
