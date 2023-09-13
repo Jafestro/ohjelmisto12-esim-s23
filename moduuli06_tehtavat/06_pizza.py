@@ -26,6 +26,6 @@ pizza2_yksikkohinta = pizza_price_per_square(pizza2_diameter, pizza2_price)  # L
 if pizza1_yksikkohinta < pizza2_yksikkohinta:
     print("Toinen pizza on paras vaihtoehto")
 elif pizza1_yksikkohinta > pizza2_yksikkohinta:
-    print("Ensi pizza on paras vaihtoehto")
+    print("Ensimmäinen pizza on paras vaihtoehto")
 else:
     print(f"Molemmat ovat samanhintaisia")
