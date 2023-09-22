@@ -21,7 +21,7 @@ def get_lentokoneasema(icao):
     tulos = kursori.fetchall()
 
     # Tsekataan jos tulos on tyhjä tai ei
-    if kursori.rowcount > 0:
+    if tulos:
         # Jos ei oo tyhjä tulostetaan ensi lentokentaan nimi ja
         # sen jälkeen sijanti eli maa
         print(f"Lentokoneasema: {tulos[0][0]}\nSijanti: {tulos[0][1]}")

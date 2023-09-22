@@ -19,7 +19,7 @@ def get_lentokentan_lkm_typpien(maakoodi):
     tulos = kursori.fetchall()
 
     # Tsekataan jos tulos on tyhjä tai ei
-    if kursori.rowcount > 0:
+    if tulos:
         # Jos ei tyhjä tulostetaan taulu rivi riviltä ja palautetaan tulos eli taulu
         for i in tulos:
             print(f"Tyyppi: {i[0]}, Count: {i[1]}")

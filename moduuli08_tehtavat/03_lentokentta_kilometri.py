@@ -14,7 +14,7 @@ def get_latitude_and_longtitude_by_icao(icao):
     tulos = kursori.fetchall()
 
     # Tsekataan jos tulos on tyhjä tai ei
-    if kursori.rowcount > 0:
+    if tulos:
         # Jos ei tyhjä tulostetaan taulu rivi riviltä ja palautetaan tulos eli taulu
         sijanti = tulos[0]
         return sijanti
