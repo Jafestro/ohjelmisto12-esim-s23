@@ -47,5 +47,5 @@ while True:
 i = 1
 for auto in sorted_auto_lista:
     print(f"{i}. Kilpa Numero:{auto.rekisteritunnus}, Huippunopeus:{auto.huippunopeus}km/h, "
-          f"Hetkinen nopeus:{auto.hetkinen_nopeus}km/h, Kuljettu matka:{auto.kuljettu_matka}")
+          f"Hetkinen nopeus:{auto.hetkinen_nopeus}km/h, Kuljettu matka:{auto.kuljettu_matka}km")
     i += 1
