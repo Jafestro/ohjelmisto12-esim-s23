@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Lato;
+    src: url("Lato-Regular.ttf") format("truetype");
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+html {
+    font-family: Lato, sans-serif;
+}
+
+header {
+    background-color: chartreuse;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: chocolate;
+}
+
+li a:hover::after {
+    content: ' @';
+}
+
+main {
+    background-color: darkseagreen;
+}
+
+footer {
+    background-color: rgb(128, 128, 128);
+}

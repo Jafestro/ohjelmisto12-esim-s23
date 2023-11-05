@@ -1,0 +1,20 @@
+p {
+    color: red;
+}
+
+#id-example {
+    color: brown;
+}
+
+.class-example {
+    color: blue;
+}
+
+li>a {  /* needs to be exactly first child of the first element   child selector(>)*/
+    color: darkgreen;
+}
+
+/*li a {
+    color: darkgreen; if its inside of first element it will be applied  descendant selector(space)
+}
+*/
