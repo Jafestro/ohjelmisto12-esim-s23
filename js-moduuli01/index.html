@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+    <style>
+        .blue {
+            color: blue;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+
+<h1>
+    Hei kaytetaan konsolia
+</h1>
+
+<div>Moi olen divi</div>
+
+<p id="teksti" class="blue">Moi Haluan muutta tama</p>
+
+<script>
+    'use strict';
+    // kommentti juuuu
+    /**
+     *
+     * hello
+     * theren documentation
+     */
+
+    /*
+    fsdfsdfsdfsdfsdfsdf also comment
+     */
+    function kysyQuest() {
+        const quest = prompt('WHATS UR QUEST!??')
+        if (quest.toUpperCase() === 'to be funny'.toUpperCase()) {
+            alert('All right!');
+        } else {
+            alert('Ur wrong');
+            kysyQuest();
+        }
+    }
+
+
+    // nyt muutetaan hmtl sisältä
+    const htmlNimi = "Ulla";
+    const element = document.querySelector('#teksti');
+    element.innerHTML = `Hei ${htmlNimi}`;
+    element.style.color = 'red';
+
+
+    /*
+    console.log('Moro Maailma  suoraan bodyn sisalta');
+    const nimi = prompt('Moi sun nimi kiitos');
+    alert('Moi ' + nimi + '!');
+    alert(`Tykkaan sun nimesta... ${nimi} good name`);
+    alert('Your quest is to be funny');
+    kysyQuest();
+    */
+    // var, älä käytä jos ei oo pakko
+    //  älkää tehkö näin
+    // var muuttujan voi määritellä useaan kertaan
+    // hoisting eli käyttö ennen määrittelyä mahdollista
+    console.log(age);
+    var age = 12;
+    var age = 13;
+    console.log(age)
+
+    let age2 = 12;
+    console.log(age2)
+    age2 = 13;
+    console.log(age2);
+
+
+    // tämän takia strict ja cont/let
+
+    let teacher = 'Jafar';
+    let surname;
+    surname = 'Jafarov';
+    console.log(teacher);
+
+    const teacher2 = 'Matti';
+    const surname2 = 'Peltoniemi';
+    // aiheuttaa virheen, const on siis muuttumaton / constant
+    // teacher2 = teacher2 + surname2
+    // console.log(teacher2)
+
+    /*const multiplier = 4.1868;
+    const k1 = prompt('Give me amount of energy for lunch (kcal).');
+    const j1 = multiplier * k1;
+    console.log(`At breakfast you got ${j1} kJ`);
+    */
+
+    const taulukko = [0, 1, 2, 3, 4, 5];
+    console.log(taulukko);
+
+    // ei onnistui
+    // taulukko = [1,2,3,4,5,6]
+
+    //onnistuu
+    taulukko[0] = 1;
+    console.log(taulukko);
+
+    let nameAgain = 'Ulla';
+    console.log(typeof nameAgain, nameAgain);
+    nameAgain = 200;
+    console.log(typeof nameAgain, nameAgain);
+
+    //käytetään toString metodia
+    const ageStr = 13;
+    const age3 = ageStr.toString();
+    console.log(typeof age3, age3);
+
+
+
+</script>
+</body>
+</html>
