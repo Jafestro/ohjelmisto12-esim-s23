@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03</title>
+</head>
+<body>
+
+<p id="paragraph"></p>
+<script>
+  'use strict';
+  const num1 = parseInt(prompt("Ensimmäinen integer"));
+  const num2 = parseInt(prompt("Toinen integer"));
+  const num3 = parseInt(prompt("Kolmas integer"));
+
+  const product = num1*num2*num3;
+  const sum = num1+num2+num3;
+  const average = (num1+num2+num3)/3;
+
+  const element = document.querySelector('#paragraph');
+  element.innerHTML = `The sum ${sum} , the product ${product}, the average ${average}`;
+</script>
+
+</body>
+</html>
