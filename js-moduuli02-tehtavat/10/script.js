@@ -1,5 +1,5 @@
 'use strict';
-
+// Ei pääsi check assignment jutusta mutta kyllä se toimi :=)
 function compare(b, a){
     if(a.votes > b.votes)
         return 1;
