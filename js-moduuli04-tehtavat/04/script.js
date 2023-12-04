@@ -33,7 +33,8 @@ async function getShowArticle(){
                 nameElem.innerHTML = show[i].show.name;
 
                 linkElem.target = "_blank";
-                linkElem.href = show[i].show.officialSite;
+                linkElem.href = show[i].show.url;
+                linkElem.innerHTML = show[i].show.url;
                 
                 if(show[i].show.image?.medium !== undefined)
                     imgElem.src = show[i].show.image.medium;
@@ -44,8 +45,8 @@ async function getShowArticle(){
                 summaryElem.innerHTML = show[i].show.summary;
 
                 article.append(nameElem);
-                article.append(linkElem);
                 article.append(imgElem);
+                article.append(linkElem);
                 article.append(summaryElem);
             }
             document.querySelector('body').append(article);
