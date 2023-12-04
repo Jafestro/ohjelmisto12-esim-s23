@@ -130,4 +130,4 @@ for(let i = 0; i < picArray.length; i++){
   span.addEventListener('click', function(){
     dialog.close();
   });
- 
+  
